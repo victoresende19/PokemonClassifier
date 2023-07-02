@@ -30,6 +30,9 @@ Acesse a base de dados aqui: https://www.kaggle.com/datasets/rounakbanik/pokemon
   - Peso
   - nome_modelo
 
+Para iniciar o backend da aplicação, apenas digite o comando abaixo:
+- python -m uvicorn app.main:app --reload
+
 ### Interface (React):
 Para rodar a interface, apenas digite os comando a seguir:
 - npm install
@@ -68,6 +71,9 @@ Access the database here: https://www.kaggle.com/datasets/rounakbanik/pokemon.
   - Height
   - Weight
   - nome_modelo
+
+To run the backend, just type the comand below:
+- python -m uvicorn app.main:app --reload
 
 ### Interface (React)
 To run the interface, just type the commands below:
