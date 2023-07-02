@@ -1,0 +1,75 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #5199cf;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e0392d;
+  margin-bottom: 30px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+label {
+  color:#fff
+}
+
+input[type="number"] {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 50px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #1c5987;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #083c64;
+}
+
+.prediction-result {
+  margin-left: -170px;
+  margin-top: 10px;
+  background-color: #5199cf;
+  color:#fff;
+}
+
+.error {
+  margin-top: 30px;
+  color: #e0392d;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.logo {
+  width: 200px;
+}
+
+.description{
+  color:#fff
+}
