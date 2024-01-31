@@ -10,16 +10,15 @@ from .schema import ModelInput, PredictInput
 from traceback import print_exception
 
 app = FastAPI()
-origins = [
-    "http://localhost:3000"  # Substitua pelo domínio correto da sua aplicação React
-]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE"],
-    allow_headers=["Content-Type"],
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["GET"],
+    allow_headers=["*"],
+    expose_headers=["*"]
 )
 
 @app.post("/pokemon/treino/")
