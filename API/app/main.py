@@ -62,12 +62,12 @@ async def previsao(predict_request: PredictInput):
     try:
         # ['HP', 'Att', 'Spd', 'Def', 'Height', 'Weight']
         # Recebe as variáveis
-        HP = predict_request.HP
-        Att = predict_request.Att
-        Def = predict_request.Def
-        Spd = predict_request.Spd
-        Height = predict_request.Height
-        Weight = predict_request.Weight
+        HP = int(predict_request.HP)
+        Att = int(predict_request.Att)
+        Def = int(predict_request.Def)
+        Spd = int(predict_request.Spd)
+        Height = int(predict_request.Height)
+        Weight = int(predict_request.Weight)
         nome_modelo = predict_request.nome_modelo
 
         # Chama função de previsão
