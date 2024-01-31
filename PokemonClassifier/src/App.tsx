@@ -20,7 +20,7 @@ function App() {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8000/pokemon/previsao/",
+        "https://pokemon-classifier-api.onrender.com/pokemon/previsao/",
         pokemonData
       );
       setPredictionResult(response.data);
